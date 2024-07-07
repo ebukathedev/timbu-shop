@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	@apply min-h-screen font-roboto;
+}
+
+.mobile-menu {
+	.active {
+		@apply border-l-[5px] border-l-primary-dark bg-secondary;
+	}
+
+	li {
+		@apply px-4 py-4 transition-all duration-200 ease-in-out;
+
+		&:hover {
+			@apply bg-secondary;
+		}
+	}
+}
+
+.desktop-menu {
+	.active {
+		@apply relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[3px] after:bg-primary-dark after:origin-center;
+	}
+
+	li {
+		@apply relative after:ease-in-out after:duration-300 after:transition-all;
+
+		&:hover {
+			@apply bg-secondary after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[3px] after:bg-primary-dark;
+		}
+	}
+}
