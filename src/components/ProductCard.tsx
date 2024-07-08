@@ -34,7 +34,7 @@ const ProductCard = (props: ProductCardProps) => {
 				<div className="text-2xl font-medium xl:text-3xl">
 					{props.product_name}
 				</div>
-				<div className="mt-1 mb-3 md:text-lg lg:text-xl xl:text-2xl lg:font-medium">
+				<div className="mt-1 mb-3 md:text-lg lg:text-xl xl:text-2xl">
 					NGN {props.product_price}
 				</div>
 				<button className="bg-[#3E3BF4] text-white font-bold px-4 py-[10px] rounded-[10px] xl:text-lg">
