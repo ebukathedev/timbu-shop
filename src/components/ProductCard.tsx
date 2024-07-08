@@ -1,3 +1,6 @@
+import mobileCartButton from "../assets/icons/mobile-cart-button.svg";
+import desktopCartButton from "../assets/icons/desktop-cart-button.svg";
+
 interface ProductCardProps {
 	id: number;
 	product_image: string;
@@ -8,7 +11,19 @@ interface ProductCardProps {
 const ProductCard = (props: ProductCardProps) => {
 	return (
 		<div className="space-y-4">
-			<div>
+			<div className="relative">
+				<div className="absolute left-3 bottom-3 lg:left-5 lg:bottom-5">
+					<img
+						src={mobileCartButton}
+						alt=""
+						className="block lg:hidden"
+					/>
+					<img
+						src={desktopCartButton}
+						alt=""
+						className="hidden w-12 lg:block"
+					/>
+				</div>
 				<img
 					src={props.product_image}
 					alt="product image"
@@ -19,7 +34,7 @@ const ProductCard = (props: ProductCardProps) => {
 				<div className="text-2xl font-medium xl:text-3xl">
 					{props.product_name}
 				</div>
-				<div className="mt-1 mb-3 md:text-lg xl:text-xl">
+				<div className="mt-1 mb-3 md:text-lg lg:text-xl xl:text-2xl lg:font-medium">
 					NGN {props.product_price}
 				</div>
 				<button className="bg-[#3E3BF4] text-white font-bold px-4 py-[10px] rounded-[10px] xl:text-lg">
