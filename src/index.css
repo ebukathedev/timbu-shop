@@ -34,3 +34,14 @@ body {
 		}
 	}
 }
+
+.cart-quantity::before {
+	content: attr(data-bbl);
+	unicode-bidi: plaintext;
+	line-height: 1.1;
+	transform: translate3d(50%, -50%, 0);
+	max-height: 20px;
+	min-width: 24px;
+	min-height: 24px;
+	@apply absolute right-1 text-sm text-center text-white rounded-full bg-primary-dark top-3 px-[5px] py-[2px];
+}

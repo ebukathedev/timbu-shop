@@ -8,7 +8,7 @@ const Footer = () => {
 				<Link to="/" className="block w-16 md:w-20 lg:w-24 xl:w-auto">
 					<img src={logo} alt="timbu" />
 				</Link>
-				<div className="space-y-4 text-black lg:max-w-sm">
+				<div className="text-black space-y-4 lg:max-w-md">
 					<div className="text-base font-medium lg:text-xl">
 						About Us
 					</div>
