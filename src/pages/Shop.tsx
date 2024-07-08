@@ -3,7 +3,7 @@ import products from "../data";
 
 const Shop = () => {
 	return (
-		<section className="mb-12 space-y-16 lg:space-y-24">
+		<section className="mb-12 space-y-16 lg:space-y-24 lg:mb-28">
 			<div className="grid grid-cols-2 gap-x-4 gap-y-7 lg:grid-cols-3 md:gap-y-10 lg:gap-x-5">
 				{products.map((product) => (
 					<ProductCard key={product.id} {...product} />
