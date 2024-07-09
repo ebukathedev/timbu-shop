@@ -2,22 +2,17 @@ import { createPortal } from "react-dom";
 import Breadcrumb from "../components/Breadcrumb";
 import CartSuccess from "../components/modals/CartSuccess";
 import products from "../data";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { CartModalContext } from "../contexts/cart-modal-context";
 import ProductListing from "../components/ProductListing";
+import useScroll from "../contexts/hooks/use-scroll";
 
 const modalElement = document.getElementById("modal");
 
 const Shop = () => {
 	const { isCartSuccessModalOpen } = useContext(CartModalContext);
 
-	useEffect(() => {
-		if (isCartSuccessModalOpen) {
-			document.body.style.overflow = "hidden";
-		} else {
-			document.body.style.overflow = "auto";
-		}
-	}, [isCartSuccessModalOpen]);
+	useScroll();
 
 	return (
 		<>

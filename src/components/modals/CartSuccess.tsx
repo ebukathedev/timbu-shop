@@ -34,9 +34,10 @@ const CartSuccess = () => {
 								</p>
 							</div>
 						</div>
-						<div className="font-bold space-y-2 lg:space-y-4">
+						<div className="space-y-2 font-bold lg:space-y-4">
 							<Link
 								to="/cart"
+								onClick={closeCartSuccessModal}
 								className="rounded-[10px] border border-primary-dark px-4 py-[10px] text-primary-dark w-full block cursor-pointer "
 							>
 								View cart
