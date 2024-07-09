@@ -1,10 +1,5 @@
 import { createContext, ReactNode, useState } from "react";
-
-interface CartModalContextProps {
-	isCartSuccessModalOpen: boolean;
-	openCartSuccessModal: () => void;
-	closeCartSuccessModal: () => void;
-}
+import { CartModalContextProps } from "../types";
 
 type CartModalProviderProps = { children: ReactNode };
 

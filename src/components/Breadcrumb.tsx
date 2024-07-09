@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
 import leftArrow from "../assets/icons/left-arrow.svg";
-interface BreadcrumbProps {
-	pageTitle: string;
-	showBreadcrumb?: string;
-}
+import { BreadcrumbProps } from "../types";
 
 const Breadcrumb = ({ pageTitle, showBreadcrumb }: BreadcrumbProps) => {
 	return (
-		<div className="mt-10 mb-9 md:space-y-2 lg:space-y-3 md:mt-12 md:mb-14 lg:mt-14 lg:mb-16">
+		<div className="container mt-10 mb-9 md:space-y-2 lg:space-y-3 md:mt-12 md:mb-14 lg:mt-14 lg:mb-16">
 			<div className="text-[2rem] font-bold md:text-4xl lg:text-5xl">
 				{pageTitle}
 			</div>

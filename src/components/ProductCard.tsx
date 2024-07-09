@@ -3,13 +3,7 @@ import desktopCartButton from "../assets/icons/desktop-cart-button.svg";
 import { CartModalContext } from "../contexts/cart-modal-context";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-
-interface ProductCardProps {
-	id: number;
-	product_image: string;
-	product_name: string;
-	product_price: string;
-}
+import { ProductCardProps } from "../types";
 
 const ProductCard = (props: ProductCardProps) => {
 	const { openCartSuccessModal } = useContext(CartModalContext);
