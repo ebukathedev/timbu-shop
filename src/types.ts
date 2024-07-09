@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface ProductCardProps {
 	id: number;
 	product_image: string;
@@ -20,4 +22,16 @@ export interface CartModalContextProps {
 	isCartSuccessModalOpen: boolean;
 	openCartSuccessModal: () => void;
 	closeCartSuccessModal: () => void;
+}
+
+export interface InputFieldProps {
+	title: string;
+	placeholder: string;
+	type: string | "text";
+}
+
+export interface RadioInputFieldProps {
+	title: string;
+	checked: boolean;
+	children?: ReactNode;
 }

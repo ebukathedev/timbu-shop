@@ -25,14 +25,14 @@ const Shop = () => {
 	return (
 		<>
 			<Breadcrumb pageTitle="Shop" />
-			<div className="container">
+			<section className="container">
 				{isCartSuccessModalOpen && <CartSuccess />}
 				<ProductListing
 					products={productDisplay}
 					showMoreButton={showMoreButton}
 					handleShowMore={handleShowMore}
 				/>
-			</div>
+			</section>
 		</>
 	);
 };
