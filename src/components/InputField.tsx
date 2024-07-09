@@ -8,7 +8,7 @@ const InputField = ({ title, placeholder, type }: InputFieldProps) => {
 				<input
 					type={type}
 					placeholder={placeholder}
-					className="w-full focus:outline-none"
+					className="w-full bg-transparent focus:outline-none"
 				/>
 			</div>
 		</div>

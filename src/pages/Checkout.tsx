@@ -2,16 +2,19 @@ import BillingDetails from "../components/BillingDetails";
 import Breadcrumb from "../components/Breadcrumb";
 import OrderSummary from "../components/OrderSummary";
 import RadioInputField from "../components/RadioInputField";
+import visa from "../assets/icons/visa.svg";
+import mastercard from "../assets/icons/mastercard.svg";
+import InputField from "../components/InputField";
 
 const Checkout = () => {
 	return (
 		<>
 			<Breadcrumb pageTitle="Checkout" showBreadcrumb="back" />
-			<section className="container lg:pt-8 ">
+			<section className="container lg:pt-8 mb-14 sm:mb-24">
 				<form className="grid grid-cols-1 gap-9">
 					<BillingDetails />
 					<OrderSummary />
-					<div>
+					<div className="space-y-9">
 						<div className="space-y-4">
 							<div className="text-lg font-semibold lg:text-[1.75rem]">
 								Delivery Options
@@ -23,6 +26,70 @@ const Checkout = () => {
 									checked={false}
 								/>
 							</div>
+						</div>
+						<div>
+							<div className="space-y-3">
+								<div className="text-lg font-semibold lg:text-[1.75rem]">
+									Payment Options
+								</div>
+								<div className="pb-6 bg-gray-100 rounded-b-[10px]">
+									<div className="space-y-4">
+										<RadioInputField
+											title="Credit card Payment"
+											checked
+										>
+											<div className="flex items-center gap-4 pl-1 ml-auto">
+												<div>
+													<img src={visa} alt="" />
+												</div>
+												<div>
+													<img
+														src={mastercard}
+														alt=""
+													/>
+												</div>
+											</div>
+										</RadioInputField>
+										<form className="px-3 space-y-4">
+											<InputField
+												title="Name on card"
+												placeholder="Zuliat Amuda"
+												type="text"
+											/>
+											<InputField
+												title="Card number"
+												placeholder="0000 0000 0000"
+												type="text"
+											/>
+											<div className="flex gap-6">
+												<InputField
+													title="Expiry Date"
+													placeholder="MM / YY"
+													type="text"
+												/>
+												<InputField
+													title="Security Code"
+													placeholder="000"
+													type="text"
+												/>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div className="space-y-3">
+									<RadioInputField
+										title="Bank Transfer"
+										checked={false}
+									/>
+									<RadioInputField
+										title="Mobile money"
+										checked={false}
+									/>
+								</div>
+							</div>
+							<button className="rounded-[10px] font-bold mt-6 bg-primary text-white px-4 py-[10px] w-full block cursor-pointer lg:text-lg">
+								Pay Now
+							</button>
 						</div>
 					</div>
 				</form>

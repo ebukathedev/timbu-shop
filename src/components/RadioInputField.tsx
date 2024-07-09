@@ -1,5 +1,6 @@
 import { RadioInputFieldProps } from "../types";
 import radioChecked from "../assets/icons/radio-checked.svg";
+import radioUnchecked from "../assets/icons/radio-unchecked.svg";
 
 const RadioInputField = ({
 	title,
@@ -18,7 +19,7 @@ const RadioInputField = ({
 				</div>
 			) : (
 				<div>
-					<img src={radioChecked} alt="" />
+					<img src={radioUnchecked} alt="" />
 				</div>
 			)}
 			<div>{title}</div>
