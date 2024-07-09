@@ -1,11 +1,16 @@
-import CartListing from "./CartListing";
 import CartCheckout from "./CartCheckout";
+import MobileCartItem from "./MobileCartItem";
 
 const MobileCartContent = () => {
 	return (
 		<div className="container lg:hidden">
 			<div className="max-w-[588px] mx-auto lg:max-w-none">
-				<CartListing />
+				<div className="flex flex-col gap-10">
+					<MobileCartItem />
+					<MobileCartItem />
+					<MobileCartItem />
+					<MobileCartItem />
+				</div>
 				<CartCheckout />
 			</div>
 		</div>

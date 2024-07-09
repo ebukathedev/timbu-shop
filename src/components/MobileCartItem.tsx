@@ -1,7 +1,6 @@
 import deleteIcon from "../assets/icons/delete.svg";
 import product from "../assets/products/product_1.jpg";
-import addIcon from "../assets/icons/add.svg";
-import subtractIcon from "../assets/icons/subtract.svg";
+import QuantityTracker from "./QuantityTracker";
 
 const MobileCartItem = () => {
 	return (
@@ -25,15 +24,7 @@ const MobileCartItem = () => {
 				</div>
 				<div className="flex items-center gap-10">
 					<div>Quantity</div>
-					<div className="px-2 border border-primary-dark rounded-[10px] text-lg w-full max-w-[87px] flex justify-between items-center text-primary-dark">
-						<button>
-							<img src={subtractIcon} alt="" />
-						</button>
-						<span>1</span>
-						<button>
-							<img src={addIcon} alt="" />
-						</button>
-					</div>
+					<QuantityTracker />
 				</div>
 				<div className="flex items-center gap-10">
 					<div>Total</div>

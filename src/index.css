@@ -4,7 +4,7 @@
 
 html,
 body {
-	@apply min-h-screen font-roboto;
+	@apply min-h-screen text-black font-roboto;
 }
 
 .mobile-menu {
@@ -44,4 +44,13 @@ body {
 	min-width: 24px;
 	min-height: 24px;
 	@apply absolute right-1 text-sm text-center text-white rounded-full bg-primary-dark top-3 px-[5px] py-[2px];
+}
+
+.cart-listing {
+	@apply lg:grid border-gray-300 border-y grid-cols-[1.5fr_0.5fr_0.5fr] max-w-[1200px] px-20 py-10 mx-auto;
+}
+
+.cart-checkout {
+	grid-column-start: 2;
+	grid-column-end: 4;
 }
