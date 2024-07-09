@@ -11,7 +11,7 @@ const Checkout = () => {
 		<>
 			<Breadcrumb pageTitle="Checkout" showBreadcrumb="back" />
 			<section className="container lg:pt-8 mb-14 sm:mb-24">
-				<form className="grid grid-cols-1 gap-9">
+				<form className="grid grid-cols-1 gap-9 max-w-[736px] mx-auto xl:max-w-none xl:grid-cols-2">
 					<BillingDetails />
 					<OrderSummary />
 					<div className="space-y-9">

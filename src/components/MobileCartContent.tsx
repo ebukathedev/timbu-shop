@@ -7,9 +7,6 @@ const MobileCartContent = () => {
 			<div className="max-w-[588px] mx-auto lg:max-w-none">
 				<div className="flex flex-col gap-10">
 					<MobileCartItem />
-					<MobileCartItem />
-					<MobileCartItem />
-					<MobileCartItem />
 				</div>
 				<CartCheckout />
 			</div>

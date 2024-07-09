@@ -14,7 +14,6 @@ const OrderSummary = () => {
 				<div className="pt-4 pb-6 border-t border-gray-300 ">
 					<div className="flex flex-col gap-10">
 						<CheckoutCartItem />
-						<CheckoutCartItem />
 					</div>
 					<div className="px-6 py-4 space-y-3 border-b border-gray-300">
 						<div className="flex items-center justify-between text-lg font-medium text-gray-400">
