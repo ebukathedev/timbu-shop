@@ -1,7 +1,27 @@
-import products from "../data";
+import { useState } from "react";
+import {
+	desktopProducts,
+	desktopProductsExtended,
+	mobileProducts,
+	mobileProductsExtended,
+} from "../data";
 import ProductListing from "./ProductListing";
 
 const RelatedProducts = () => {
+	const [showMoreButton, setShowMoreButton] = useState(true);
+	const [productDisplay, setProductDisplay] = useState(
+		window.innerWidth >= 1024 ? desktopProducts : mobileProducts
+	);
+
+	const handleShowMore = () => {
+		if (window.innerWidth >= 1024) {
+			setProductDisplay(desktopProductsExtended);
+		} else {
+			setProductDisplay(mobileProductsExtended);
+		}
+		setShowMoreButton(false);
+	};
+
 	return (
 		<>
 			<div className="mb-8 mt-14 lg:mt-20 lg:mb-12">
@@ -11,7 +31,11 @@ const RelatedProducts = () => {
 				<div className="text-lg font-bold md:text-xl lg:text-2xl">
 					RELATED PRODUCTS
 				</div>
-				<ProductListing products={products} />
+				<ProductListing
+					products={productDisplay}
+					showMoreButton={showMoreButton}
+					handleShowMore={handleShowMore}
+				/>
 			</div>
 		</>
 	);

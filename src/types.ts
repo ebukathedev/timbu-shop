@@ -7,6 +7,8 @@ export interface ProductCardProps {
 
 export interface ProductListingProps {
 	products: ProductCardProps[];
+	showMoreButton: boolean;
+	handleShowMore: () => void;
 }
 
 export interface BreadcrumbProps {

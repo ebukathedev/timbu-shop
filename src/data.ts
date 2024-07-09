@@ -72,4 +72,35 @@ const products = [
 	},
 ];
 
+const mobileProducts = [
+	...products.slice(1, 3),
+	...products.slice(4, 5),
+	...products.slice(3, 4),
+];
+const mobileProductsExtended = [
+	...mobileProducts,
+	...products.slice(9),
+	...products.slice(7, 9),
+	...products.slice(6, 7),
+];
+
+const desktopProducts = [...products.slice(1, 3), ...products.slice(4, 5)];
+const desktopProductsExtended = [
+	...desktopProducts,
+	...products.slice(3, 4),
+	...products.slice(9),
+	...products.slice(7, 8),
+];
+
+const someProducts = products.slice(0, 6);
+const moreProducts = [...products.slice(0, 7), ...products.slice(8)];
+
 export default products;
+export {
+	mobileProducts,
+	mobileProductsExtended,
+	desktopProducts,
+	desktopProductsExtended,
+	someProducts,
+	moreProducts
+};
