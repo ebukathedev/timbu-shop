@@ -10,6 +10,7 @@ import RootLayout from "./layouts/RootLayout";
 import Cart from "./pages/Cart";
 import Shop from "./pages/Shop";
 import Checkout from "./pages/Checkout";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
 			<Route index element={<Shop />} />
 			<Route path="/cart" element={<Cart />} />
 			<Route path="/checkout" element={<Checkout />} />
+			<Route path="*" element={<NotFound />} />
 		</Route>
 	)
 );
