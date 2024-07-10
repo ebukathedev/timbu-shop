@@ -2,16 +2,16 @@ import CheckoutCartItem from "./CheckoutCartItem";
 
 const OrderSummary = () => {
 	return (
-		<div className="space-y-4">
+		<div className="space-y-4 xl:row-span-2">
 			<div className="text-lg font-semibold lg:text-[1.75rem]">
 				Your Order
 			</div>
-			<div className="bg-gray-100 rounded-lg">
+			<div className="bg-gray-100 rounded-lg xl:h-full">
 				<div className="flex justify-between px-6 py-4 font-medium">
 					<div>Product</div>
 					<div>Total</div>
 				</div>
-				<div className="pt-4 pb-6 border-t border-gray-300 ">
+				<div className="pt-4 pb-6 border-t border-gray-300">
 					<div className="flex flex-col gap-10">
 						<CheckoutCartItem />
 					</div>
