@@ -11,11 +11,11 @@ const Checkout = () => {
 		<>
 			<Breadcrumb pageTitle="Checkout" showBreadcrumb="back" />
 			<section className="container lg:pt-8 mb-14 sm:mb-24">
-				<form className="grid grid-cols-1 gap-9 max-w-[736px] mx-auto xl:max-w-none xl:grid-cols-2">
+				<form className="grid grid-cols-1 gap-9 max-w-[736px] mx-auto xl:max-w-none xl:grid-cols-2 xl:gap-y-12">
 					<BillingDetails />
 					<OrderSummary />
-					<div className="space-y-9">
-						<div className="space-y-4">
+					<div className="space-y-9 xl:space-y-12">
+						<div className="space-y-4 lg:space-y-6">
 							<div className="text-lg font-semibold lg:text-[1.75rem]">
 								Delivery Options
 							</div>
@@ -28,7 +28,7 @@ const Checkout = () => {
 							</div>
 						</div>
 						<div>
-							<div className="space-y-3">
+							<div className="space-y-4 lg:space-y-6">
 								<div className="text-lg font-semibold lg:text-[1.75rem]">
 									Payment Options
 								</div>
@@ -38,14 +38,19 @@ const Checkout = () => {
 											title="Credit card Payment"
 											checked
 										>
-											<div className="flex items-center gap-4 pl-1 ml-auto">
+											<div className="flex items-center gap-4 pr-1 ml-auto md:gap-5 md:pr-4">
 												<div>
-													<img src={visa} alt="" />
+													<img
+														src={visa}
+														alt=""
+														className="md:w-7"
+													/>
 												</div>
 												<div>
 													<img
 														src={mastercard}
 														alt=""
+														className="md:w-7"
 													/>
 												</div>
 											</div>
@@ -87,7 +92,7 @@ const Checkout = () => {
 									/>
 								</div>
 							</div>
-							<button className="rounded-[10px] font-bold mt-6 bg-primary text-white px-4 py-[10px] w-full block cursor-pointer lg:text-lg">
+							<button className="rounded-[10px] font-bold mt-6 bg-primary text-white px-4 py-[10px] w-full block cursor-pointer lg:text-lg xl:text-2xl xl:mt-12">
 								Pay Now
 							</button>
 						</div>

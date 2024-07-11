@@ -2,7 +2,7 @@ import InputField from "./InputField";
 
 const BillingDetails = () => {
 	return (
-		<div className="space-y-4">
+		<div className="space-y-4 lg:space-y-6">
 			<div className="text-lg font-semibold lg:text-[1.75rem]">
 				Billing Details
 			</div>
