@@ -38,7 +38,7 @@ const Checkout = () => {
 											title="Credit card Payment"
 											checked
 										>
-											<div className="flex items-center gap-4 pr-1 ml-auto md:gap-5 md:pr-4">
+											<div className="flex items-center gap-4 pr-1 ml-auto md:gap-5 md:pr-4 xl:pr-8">
 												<div>
 													<img
 														src={visa}
