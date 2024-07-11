@@ -6,7 +6,7 @@ const OrderSummary = () => {
 			<div className="text-lg font-semibold lg:text-[1.75rem] xl:hidden">
 				Your Order
 			</div>
-			<div className="bg-gray-100 rounded-lg xl:flex-1">
+			<div className="bg-gray-100 rounded-lg xl:flex-1 xl:rounded-b-none">
 				<div className="flex justify-between px-6 py-4 font-medium xl:py-6 xl:text-xl xl:px-[56px]">
 					<div>Product</div>
 					<div>Total</div>
