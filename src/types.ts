@@ -5,6 +5,7 @@ export interface ProductCardProps {
 	product_image: string;
 	product_name: string;
 	product_price: string;
+	product_description?: string;
 }
 
 export interface ProductListingProps {

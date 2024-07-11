@@ -15,6 +15,7 @@ const products = [
 		product_image: product_1,
 		product_name: "Rosewater face Mist",
 		product_price: "5000.00",
+		product_description: "Large size/ 500ml bottle",
 	},
 	{
 		id: 2,
